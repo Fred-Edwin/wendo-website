@@ -1,0 +1,372 @@
+// Wendo Coffee & Bistro - Business Information Constants
+
+export const BUSINESS_INFO = {
+  name: "Wendo Coffee & Bistro",
+  tagline: "Where Every Cup Tells a Story",
+  description: "A cozy haven for coffee lovers and food enthusiasts",
+} as const;
+
+export const CONTACT_INFO = {
+  phones: {
+    primary: "0707242987",
+    secondary: "0722392343",
+  },
+  whatsapp: {
+    number: "254707242987",
+    internationalFormat: "+254 707 242987",
+    link: "https://wa.me/254707242987",
+  },
+  email: "info@wendocoffee.com", // Update with actual email if available
+  address: {
+    street: "123 Coffee Lane", // Update with actual address
+    city: "Nairobi",
+    country: "Kenya",
+    full: "123 Coffee Lane, Nairobi, Kenya", // Update with actual address
+  },
+} as const;
+
+export const OPERATING_HOURS = {
+  weekdays: {
+    days: "Monday - Friday",
+    hours: "7:00 AM - 8:00 PM",
+  },
+  saturday: {
+    days: "Saturday",
+    hours: "8:00 AM - 9:00 PM",
+  },
+  sunday: {
+    days: "Sunday",
+    hours: "8:00 AM - 7:00 PM",
+  },
+} as const;
+
+export const SOCIAL_MEDIA = {
+  facebook: {
+    name: "Facebook",
+    url: "https://facebook.com/wendocoffee", // Update with actual URL
+    handle: "@wendocoffee",
+  },
+  instagram: {
+    name: "Instagram",
+    url: "https://instagram.com/wendocoffee", // Update with actual URL
+    handle: "@wendocoffee",
+  },
+  twitter: {
+    name: "Twitter",
+    url: "https://twitter.com/wendocoffee", // Update with actual URL
+    handle: "@wendocoffee",
+  },
+  tiktok: {
+    name: "TikTok",
+    url: "https://tiktok.com/@wendocoffee", // Update with actual URL
+    handle: "@wendocoffee",
+  },
+} as const;
+
+export const NAVIGATION_LINKS = [
+  { name: "Home", href: "/" },
+  { name: "Menu", href: "/menu" },
+  { name: "About", href: "/about" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Contact", href: "/contact" },
+] as const;
+
+// Menu Categories
+export const MENU_CATEGORIES = [
+  { id: "coffee", name: "Coffee & Beverages" },
+  { id: "non-coffee", name: "Non-Coffee" },
+  { id: "iced-drinks", name: "Iced Drinks" },
+  { id: "milkshakes", name: "Milkshakes" },
+  { id: "fresh-juices", name: "Fresh Juices" },
+  { id: "breakfast-combos", name: "Breakfast Combos" },
+  { id: "breakfast", name: "Breakfast Items" },
+  { id: "lunch", name: "Lunch & Mains" },
+  { id: "pancakes", name: "Pancakes" },
+  { id: "wraps", name: "Wraps & Burgers" },
+  { id: "pizza", name: "Pizza" },
+  { id: "oriental", name: "Oriental Dishes" },
+  { id: "pastries", name: "Pastries" },
+  { id: "salads", name: "Salads" },
+] as const;
+
+export type MenuItem = {
+  id: string;
+  name: string;
+  description?: string;
+  prices: {
+    label?: string;
+    amount: number;
+  }[];
+  image: string;
+  category: string;
+  dietary?: "vegetarian" | "vegan";
+  note?: string;
+};
+
+// Menu Items Data - Complete Wendo Coffee & Bistro Menu
+export const MENU_ITEMS: MenuItem[] = [
+  // Coffee & Beverages
+  {
+    id: "espresso",
+    name: "Espresso",
+    description: "Rich and bold Italian-style espresso, expertly extracted from premium Arabica beans",
+    prices: [
+      { label: "Single", amount: 150 },
+      { label: "Double", amount: 200 },
+    ],
+    image: "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04",
+    category: "coffee",
+    dietary: "vegan",
+  },
+  {
+    id: "americano",
+    name: "Americano",
+    description: "Classic espresso diluted with hot water for a smooth, full-bodied experience",
+    prices: [
+      { label: "Single", amount: 150 },
+      { label: "Double", amount: 200 },
+    ],
+    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd",
+    category: "coffee",
+    dietary: "vegan",
+  },
+  {
+    id: "latte",
+    name: "Café Latte",
+    description: "Smooth espresso with steamed milk and delicate microfoam, perfect for latte art",
+    prices: [
+      { label: "Regular", amount: 200 },
+      { label: "Large", amount: 250 },
+    ],
+    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735",
+    category: "coffee",
+    dietary: "vegetarian",
+  },
+  {
+    id: "cappuccino",
+    name: "Cappuccino",
+    description: "Equal parts espresso, steamed milk, and luxurious foam for the perfect balance",
+    prices: [
+      { label: "Regular", amount: 200 },
+      { label: "Large", amount: 250 },
+    ],
+    image: "https://images.unsplash.com/photo-1534778101976-62847782c213",
+    category: "coffee",
+    dietary: "vegetarian",
+  },
+  {
+    id: "mocha",
+    name: "Café Mocha",
+    description: "Decadent combination of espresso, chocolate, and steamed milk topped with whipped cream",
+    prices: [
+      { label: "Regular", amount: 250 },
+      { label: "Large", amount: 300 },
+    ],
+    image: "https://images.unsplash.com/photo-1607260550778-aa9d29444ce1",
+    category: "coffee",
+    dietary: "vegetarian",
+  },
+  {
+    id: "iced-coffee",
+    name: "Iced Coffee",
+    description: "Refreshing cold-brewed coffee served over ice with your choice of milk",
+    prices: [{ label: "One Size", amount: 200 }],
+    image: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
+    category: "coffee",
+  },
+
+  // Breakfast
+  {
+    id: "full-breakfast",
+    name: "Wendo Full Breakfast",
+    description: "Eggs, sausages, bacon, sautéed mushrooms, baked beans, and toast with butter",
+    prices: [{ label: "One Size", amount: 650 }],
+    image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666",
+    category: "breakfast",
+  },
+  {
+    id: "pancakes",
+    name: "Fluffy Pancakes",
+    description: "Stack of three golden pancakes served with maple syrup, fresh berries, and whipped cream",
+    prices: [{ label: "One Size", amount: 450 }],
+    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445",
+    category: "breakfast",
+    dietary: "vegetarian",
+  },
+  {
+    id: "avocado-toast",
+    name: "Avocado Toast",
+    description: "Smashed avocado on artisan sourdough with cherry tomatoes, feta, and poached eggs",
+    prices: [{ label: "One Size", amount: 500 }],
+    image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d",
+    category: "breakfast",
+    dietary: "vegetarian",
+  },
+  {
+    id: "omelette",
+    name: "Garden Omelette",
+    description: "Three-egg omelette with peppers, onions, mushrooms, and cheddar cheese",
+    prices: [{ label: "One Size", amount: 400 }],
+    image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841",
+    category: "breakfast",
+    dietary: "vegetarian",
+  },
+
+  // Lunch & Mains
+  {
+    id: "grilled-chicken",
+    name: "Grilled Chicken Breast",
+    description: "Herb-marinated chicken breast with roasted vegetables and garlic mashed potatoes",
+    prices: [{ label: "One Size", amount: 850 }],
+    image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435",
+    category: "lunch",
+  },
+  {
+    id: "beef-burger",
+    name: "Wendo Beef Burger",
+    description: "Juicy beef patty with lettuce, tomato, caramelized onions, and special sauce on a brioche bun",
+    prices: [{ label: "One Size", amount: 750 }],
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+    category: "lunch",
+  },
+  {
+    id: "pasta-carbonara",
+    name: "Pasta Carbonara",
+    description: "Creamy carbonara with crispy bacon, parmesan, and black pepper on fresh fettuccine",
+    prices: [{ label: "One Size", amount: 700 }],
+    image: "https://images.unsplash.com/photo-1612874742237-6526221588e3",
+    category: "lunch",
+  },
+  {
+    id: "caesar-salad",
+    name: "Caesar Salad",
+    description: "Crisp romaine lettuce, croutons, parmesan, and classic Caesar dressing with grilled chicken",
+    prices: [{ label: "One Size", amount: 550 }],
+    image: "https://images.unsplash.com/photo-1546793665-c74683f339c1",
+    category: "lunch",
+  },
+
+  // Pizza
+  {
+    id: "margherita",
+    name: "Margherita Pizza",
+    description: "Classic pizza with San Marzano tomato sauce, fresh mozzarella, and basil",
+    prices: [
+      { label: "Small", amount: 600 },
+      { label: "Large", amount: 900 },
+    ],
+    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002",
+    category: "pizza",
+    dietary: "vegetarian",
+  },
+  {
+    id: "pepperoni",
+    name: "Pepperoni Pizza",
+    description: "Loaded with premium pepperoni, mozzarella, and our signature tomato sauce",
+    prices: [
+      { label: "Small", amount: 700 },
+      { label: "Large", amount: 1000 },
+    ],
+    image: "https://images.unsplash.com/photo-1628840042765-356cda07504e",
+    category: "pizza",
+  },
+  {
+    id: "bbq-chicken",
+    name: "BBQ Chicken Pizza",
+    description: "Grilled chicken, red onions, cilantro, and mozzarella with tangy BBQ sauce base",
+    prices: [
+      { label: "Small", amount: 750 },
+      { label: "Large", amount: 1100 },
+    ],
+    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38",
+    category: "pizza",
+  },
+  {
+    id: "veggie-supreme",
+    name: "Veggie Supreme Pizza",
+    description: "Bell peppers, mushrooms, olives, onions, and cherry tomatoes on a bed of mozzarella",
+    prices: [
+      { label: "Small", amount: 650 },
+      { label: "Large", amount: 950 },
+    ],
+    image: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f",
+    category: "pizza",
+    dietary: "vegetarian",
+  },
+
+  // Pastries & Desserts
+  {
+    id: "croissant",
+    name: "Butter Croissant",
+    description: "Flaky, buttery French croissant baked fresh daily to golden perfection",
+    prices: [{ label: "One Size", amount: 180 }],
+    image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a",
+    category: "pastries",
+    dietary: "vegetarian",
+  },
+  {
+    id: "chocolate-muffin",
+    name: "Double Chocolate Muffin",
+    description: "Rich chocolate muffin loaded with chocolate chips, moist and decadent",
+    prices: [{ label: "One Size", amount: 200 }],
+    image: "https://images.unsplash.com/photo-1607478900766-efe13248b125",
+    category: "pastries",
+    dietary: "vegetarian",
+  },
+  {
+    id: "cheesecake",
+    name: "New York Cheesecake",
+    description: "Creamy cheesecake with graham cracker crust, topped with berry compote",
+    prices: [{ label: "Slice", amount: 350 }],
+    image: "https://images.unsplash.com/photo-1533134242116-8e9b97dc6bb4",
+    category: "pastries",
+    dietary: "vegetarian",
+  },
+  {
+    id: "tiramisu",
+    name: "Classic Tiramisu",
+    description: "Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream",
+    prices: [{ label: "Slice", amount: 400 }],
+    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9",
+    category: "pastries",
+    dietary: "vegetarian",
+  },
+
+  // Smoothies & Juices
+  {
+    id: "mango-smoothie",
+    name: "Tropical Mango Smoothie",
+    description: "Fresh mango blended with yogurt, honey, and a hint of lime for a refreshing treat",
+    prices: [{ label: "One Size", amount: 300 }],
+    image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625",
+    category: "smoothies",
+    dietary: "vegetarian",
+  },
+  {
+    id: "berry-blast",
+    name: "Berry Blast Smoothie",
+    description: "Mixed berries with banana, Greek yogurt, and a touch of honey",
+    prices: [{ label: "One Size", amount: 300 }],
+    image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888",
+    category: "smoothies",
+    dietary: "vegetarian",
+  },
+  {
+    id: "green-detox",
+    name: "Green Detox Smoothie",
+    description: "Spinach, kale, apple, cucumber, and ginger for a healthy energy boost",
+    prices: [{ label: "One Size", amount: 350 }],
+    image: "https://images.unsplash.com/photo-1610970881699-44a5587cabec",
+    category: "smoothies",
+    dietary: "vegan",
+  },
+  {
+    id: "fresh-orange",
+    name: "Fresh Orange Juice",
+    description: "100% freshly squeezed orange juice, no added sugar or preservatives",
+    prices: [{ label: "One Size", amount: 250 }],
+    image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba",
+    category: "smoothies",
+    dietary: "vegan",
+  },
+];
