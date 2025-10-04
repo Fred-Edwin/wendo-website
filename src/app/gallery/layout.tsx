@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "Browse our gallery showcasing Wendo Coffee & Bistro's cozy interior, delicious food, specialty coffee, and community events. See what makes us special.",
+    "Browse our gallery showcasing Wendo Coffee & Bistro&apos;s cozy interior, delicious food, specialty coffee, and community events. See what makes us special.",
   keywords: [
     "cafe photos Nyeri",
     "bistro gallery",

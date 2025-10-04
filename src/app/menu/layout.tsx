@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Our Menu",
   description:
-    "Explore Wendo Coffee & Bistro's menu featuring premium coffee, fresh meals, gourmet pizza, pastries, and more. From espresso to smoothies, discover our complete offerings.",
+    "Explore Wendo Coffee & Bistro&apos;s menu featuring premium coffee, fresh meals, gourmet pizza, pastries, and more. From espresso to smoothies, discover our complete offerings.",
   keywords: [
     "coffee menu Nyeri",
     "bistro menu",

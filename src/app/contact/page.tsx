@@ -79,7 +79,7 @@ export default function ContactPage() {
             Get In Touch
           </h1>
           <p className="text-cream text-lg md:text-xl max-w-2xl mx-auto">
-            We'd love to hear from you
+            We&apos;d love to hear from you
           </p>
         </div>
       </section>
@@ -97,7 +97,7 @@ export default function ContactPage() {
               {submitted && (
                 <div className="mb-6 p-4 bg-natural/10 border border-natural rounded-lg">
                   <p className="text-natural font-semibold">
-                    ✓ Message sent successfully! We'll get back to you soon.
+                    ✓ Message sent successfully! We&apos;ll get back to you soon.
                   </p>
                 </div>
               )}

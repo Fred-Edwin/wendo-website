@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Wendo Coffee & Bistro. Find our location, phone numbers, email, and operating hours. We're here to help!",
+    "Get in touch with Wendo Coffee & Bistro. Find our location, phone numbers, email, and operating hours. We&apos;re here to help!",
   keywords: [
     "contact Wendo",
     "cafe contact Nyeri",

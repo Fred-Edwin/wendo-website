@@ -33,7 +33,7 @@ export default function AboutPage() {
       icon: Coffee,
       title: "Quality Coffee",
       description:
-        "We source premium, locally-roasted Arabica beans from Kenya's finest estates, ensuring every cup delivers exceptional flavor and aroma.",
+        "We source premium, locally-roasted Arabica beans from Kenya&apos;s finest estates, ensuring every cup delivers exceptional flavor and aroma.",
     },
     {
       icon: Leaf,
@@ -51,7 +51,7 @@ export default function AboutPage() {
       icon: Wifi,
       title: "Community Hub",
       description:
-        "More than just a cafe - we're a workspace, meeting spot, and gathering place for Nyeri's creative and professional community.",
+        "More than just a cafe - we&apos;re a workspace, meeting spot, and gathering place for Nyeri&apos;s creative and professional community.",
     },
   ];
 
@@ -64,12 +64,12 @@ export default function AboutPage() {
     {
       title: "Community",
       description:
-        "Wendo is built on relationships. We're proud to be a gathering place where friendships form, ideas flourish, and memories are made.",
+        "Wendo is built on relationships. We&apos;re proud to be a gathering place where friendships form, ideas flourish, and memories are made.",
     },
     {
       title: "Sustainability",
       description:
-        "We're committed to sustainable practices - from supporting local farmers to reducing waste and using eco-friendly packaging wherever possible.",
+        "We&apos;re committed to sustainable practices - from supporting local farmers to reducing waste and using eco-friendly packaging wherever possible.",
     },
   ];
 
@@ -132,7 +132,7 @@ export default function AboutPage() {
 
                 <p>
                   What started as a small coffee shop has blossomed into a
-                  beloved community hub. We've watched entrepreneurs build their
+                  beloved community hub. We&apos;ve watched entrepreneurs build their
                   businesses from our corner tables, seen friendships form over
                   shared meals, and witnessed countless celebrations and quiet
                   moments of reflection within our walls.
