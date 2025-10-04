@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import { PhoneIcon } from "@heroicons/react/24/outline";
 import { CONTACT_INFO } from "@/lib/constants";
 
 export default function ReservationsPage() {
@@ -21,7 +21,7 @@ export default function ReservationsPage() {
   // Generate time slots from 8 AM to 9 PM in 30-min intervals
   const timeSlots = [];
   for (let hour = 8; hour <= 21; hour++) {
-    for (let min of [0, 30]) {
+    for (const min of [0, 30]) {
       if (hour === 21 && min === 30) break;
       const time = `${hour.toString().padStart(2, "0")}:${min
         .toString()
@@ -121,7 +121,7 @@ export default function ReservationsPage() {
               {submitted && (
                 <div className="mb-6 p-4 bg-natural/10 border border-natural rounded-lg">
                   <p className="text-natural font-semibold">
-                    ✓ Reservation request submitted successfully! We'll confirm shortly.
+                    ✓ Reservation request submitted successfully! We&apos;ll confirm shortly.
                   </p>
                 </div>
               )}

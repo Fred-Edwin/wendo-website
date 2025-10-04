@@ -139,7 +139,7 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  Our name, "Wendo," means "love" in Kikuyu - and that's exactly
+                  Our name, &quot;Wendo,&quot; means &quot;love&quot; in Kikuyu - and that&apos;s exactly
                   what we pour into everything we do. From carefully selecting
                   our coffee beans from local Kenyan estates to hand-crafting
                   each menu item, every detail reflects our love for great food,
@@ -149,7 +149,7 @@ export default function AboutPage() {
 
                 <p>
                   Surrounded by lush greenery and filled with natural light,
-                  Wendo is more than a bistro - it's a sanctuary from the hustle
+                  Wendo is more than a bistro - it&apos;s a sanctuary from the hustle
                   of daily life, a workspace for dreamers and doers, and a
                   gathering place for those who appreciate the finer things in
                   life.

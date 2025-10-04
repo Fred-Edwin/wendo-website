@@ -34,14 +34,14 @@ export default function AboutPreview() {
             <div className="space-y-4 text-secondary leading-relaxed">
               <p>
                 At Wendo Coffee & Bistro, we believe that great coffee is more
-                than just a drink—it's an experience. Nestled in the heart of
+                than just a drink—it&apos;s an experience. Nestled in the heart of
                 Nyeri, our cozy space combines the warmth of community with the
                 excellence of expertly crafted beverages and fresh, delicious
                 food.
               </p>
               <p>
                 Surrounded by lush greenery, our bistro offers a tranquil
-                escape from the everyday hustle. Whether you're catching up
+                escape from the everyday hustle. Whether you&apos;re catching up
                 with friends, working remotely, or simply savoring a quiet
                 moment with your favorite brew, Wendo is your home away from
                 home.

@@ -16,7 +16,7 @@ export default function NotFound() {
         </h2>
 
         <p className="text-secondary text-lg mb-8">
-          Oops! The page you're looking for seems to have wandered off. Perhaps
+          Oops! The page you&apos;re looking for seems to have wandered off. Perhaps
           it went for a coffee break?
         </p>
 
